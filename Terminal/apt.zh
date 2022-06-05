@@ -1,0 +1,14 @@
+apt update                                   更新可用包列表
+apt upgrade                                  通过安装/升级软件包的方式升级系统
+apt full-upgrade                             通过卸载/安装/升级包的方式进行系统升级
+apt edit-sources                             编辑源信息文件
+apt list --installed                         已安装包列表
+apt list --upgradable                        可更新的软件包列表
+apt list <package_name>                      基于包名称过滤列表
+apt show <package_name>                      显示包详细信息
+apt search <keyword>                         基于包描述搜索关键字过滤列表
+apt install <package_name>                   安装指定的软件包
+apt install <package_name1> <package_name2>  安装指定的多个软件包
+apt install <package_name>=<version_number>  安装指定版本的软件包
+apt remove <package_name>                    删除软件包
+apt autoremove                               清理所有未使用的包

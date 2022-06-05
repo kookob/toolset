@@ -1,0 +1,15 @@
+yum check-update                          Check for available package updates
+yum update                                Update packages
+yum update <package_name>                 Update a specified package
+yum upgrade                               Update packages taking obsoletes into account
+yum search <keyword>                      Search package details for the given string
+yum install <package_name>                Install a specified package
+yum remove <package_name>                 Remove package
+
+yum list | grep <package_name>            list packages based on package names
+yum list installed | grep <package_name>  list of installed packages
+
+yum clean packages                        Remove cached packages
+yum clean headers                         Remove cached headers
+yum clean oldheaders                      Remove cached old headers
+yum clean all                             Remove cached packages and old headers

@@ -1,0 +1,45 @@
+★Edit Commands
+Ctrl + a   Move the cursor to the beginning of the line
+Ctrl + e   Move the cursor to the end of the line
+Ctrl + f   Move cursor right (same as ←)
+Ctrl + b   Move the cursor to the left (same as →)
+Alt + f    Move the cursor to the right of the word
+Alt + b    Move the cursor to the left by the word
+Ctrl + xx  Switch first and current cursor position
+
+Ctrl + u   Delete the content to the left of the cursor
+Ctrl + k   Delete the content to the right of the cursor
+Ctrl + w   Delete the word to the left of the cursor
+Alt + d    Delete the word to the right of the cursor
+Ctrl + y   Paste or restore the deleted content of the above way (u, k, w, d)
+Ctrl + d   Delete the character at the cursor (same as the Delete key)
+Ctrl + h   Delete the character before the cursor (same as Backspace key)
+
+Alt + c    Convert the word to the right of the cursor to initial capital
+Alt + u    Convert the word to the right of the cursor to uppercase
+Alt + l    Convert the word to the right of the cursor to lowercase
+Alt + t    Swaps the cursor position (the end of the word) and the word before it (press the word at the cursor and move it backward)
+Ctrl + t   Swaps the character at the cursor and the character in front (keep pressing the character at the cursor to move backward)
+
+★History Commands
+Ctrl + r   History command search
+Ctrl + g   To exit from search mode (same as Esc)
+Ctrl + p   Previous command (same as ↑)
+Ctrl + n   Next command (same as ↓)
+Alt + .    Paste the last word of the previous command
+!!         Execute the last command
+!num       Execute the history command number num, such as: !10
+!his:      Execute the most recent command beginning with his, such as: history 10
+!his:p     Output the most recent command beginning with his, such as: history 10
+!$         Same as (Alt + .)
+!$:p       Output the last word of the previous command
+^foo       Delete foo in the previous command, such as: ^10 (history 10 | grep his => history | grep his)
+^foo^bar   Replace foo in the previous command with bar, such as: ^10^20 (history 10 | grep his => history 20 | grep his)
+^foo^bar^  Replace all foo in the previous command with bar
+
+★Control Commands
+Ctrl + l   Clear screen
+Ctrl + s   Stop screen output
+Ctrl + q   Allows screen output
+Ctrl + c   Terminate the command
+Ctrl + z   Suspend command

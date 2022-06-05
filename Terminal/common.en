@@ -1,0 +1,35 @@
+uname -a                          print all system information
+lsb_release -a                    Ubuntu: show the release all system information
+cat /etc/redhat-release           print the CentOS version
+cat /proc/version                 Show Linux kernel information
+cat /etc/issue
+cat /proc/loadavg
+cat /proc/cpuinfo                 Show cpu info
+cat /proc/meminfo                 Show memory info
+cat /proc/partitions              Show partitions info
+getconf LONG_BIT                  Show Linux system bits
+getconf WORD_BIT                  Show the number of WORD(int type) in the current system
+fdisk -l                          display partitions
+
+mount | column -t
+route -n
+cut -d: -f1 /etc/passwd
+cut -d: -f1 /etc/group
+crontab -l
+
+ssh-keygen -t rsa
+
+dpkg -L <service_name>            show service install path
+service --status-all
+service <service_name> status     service status
+service <service_name> start      start service
+service <service_name> stop       stop service
+service <service_name> restart    restart service
+
+systemctl status <service_name>   service status
+systemctl start <service_name>    start service
+systemctl stop <service_name>     stop service
+systemctl restart <service_name>  restart service
+
+Ubuntu Packages Search
+https://packages.ubuntu.com/

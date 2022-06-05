@@ -1,0 +1,45 @@
+★编辑命令
+Ctrl + a   光标移动到行首
+Ctrl + e   光标移动到行尾
+Ctrl + f   光标右移(同←)
+Ctrl + b   光标左移(同→)
+Alt + f    光标按单词右移
+Alt + b    光标按单词左移
+Ctrl + xx  当前光标和行首切换
+
+Ctrl + u   删除光标左边的内容
+Ctrl + k   删除光标右边的内容
+Ctrl + w   删除光标左边的词组
+Alt + d    删除光标右边的词组
+Ctrl + y   粘贴或者恢复上面方式(u,k,w,d)的删除的内容
+Ctrl + d   删除光标处的字符(同Delete键)
+Ctrl + h   删除光标前的字符(同Backspace键)
+
+Alt + c    把光标右边的单词转换成首字母大写
+Alt + u    把光标右边的单词转换成大写
+Alt + l    把光标右边的单词转换成小写
+Alt + t    交换光标处(单词结尾)和前面的单词(一直按光标处的单词一直向后移)
+Ctrl + t   交换光标处和前面的字符(一直按光标处的字符一直向后移)
+
+★历史命令
+Ctrl + r   历史命令搜索
+Ctrl + g   从搜索模式退出(同Esc)
+Ctrl + p   上一条命令(同↑)
+Ctrl + n   下一条命令(同↓)
+Alt + .    粘贴上一条命令的最后一个词组
+!!         执行上一条命令
+!num       执行第num号的历史命令，如：!10
+!his:      执行最近以his开头的命令，如：history 10
+!his:p     输出最近以his开头的命令，如：history 10
+!$         同(Alt + .)
+!$:p       输出上一条命令的最后一个词组
+^foo       删除上一条命令中的foo，如：^10 (history 10 | grep his => history | grep his)
+^foo^bar   将上一条命令中的foo替换成bar，如：^10^20 (history 10 | grep his => history 20 | grep his)
+^foo^bar^  将上一条命令中所有的foo都替换为bar
+
+★控制命令
+Ctrl + l   清屏
+Ctrl + s   阻止屏幕输出
+Ctrl + q   允许屏幕输出
+Ctrl + c   终止命令
+Ctrl + z   挂起命令

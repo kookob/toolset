@@ -1,0 +1,15 @@
+yum check-update                          检查可更新的软件包
+yum update                                更新所有软件包
+yum update <package_name>                 更新指定的软件包
+yum upgrade                               考虑旧版本情况更新所有软件包
+yum search <keyword>                      基于包描述搜索关键字过滤列表
+yum install <package_name>                安装指定的软件包
+yum remove <package_name>                 删除软件包
+
+yum list | grep <package_name>            基于包名过滤软件包列表
+yum list installed | grep <package_name>  基于包名过滤已安装软件包列表
+
+yum clean packages                        清理缓存目录下的软件包
+yum clean headers                         清理缓存目录下的headers
+yum clean oldheaders                      清理缓存目录下旧的headers
+yum clean all                             清除缓存目录下的软件包及旧的headers

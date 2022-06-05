@@ -1,0 +1,22 @@
+★install
+yum install screen
+apt install screen
+rpm -qa | grep screen
+
+★common usages
+#The below <session> is mean id or name of the corresponding session
+screen -S <session_name>  new a session with name
+screen -ls                list all sessions
+screen -r <session>       Reattach to a detached screen process
+screen -d <session>       Detach the elsewhere running screen
+screen -d -r <session>    Detach current session and reattach to <session>
+screen -R <session>       Reattach to a detached screen, if session not found, create a new session
+
+★shortcut
+C-a ?                     Display all binding key information
+C-a d                     Detach current session
+C-a k                     Kill current session
+C-a C-a                   Switch between two recently used sessions
+
+★config file
+/etc/screenrc

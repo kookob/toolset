@@ -1,0 +1,22 @@
+★安装
+yum install screen
+apt install screen
+rpm -qa | grep screen
+
+★使用
+#下面的<session>都指定对应会话的id或name
+screen -S <session_name>  新建一个叫session_name的会话
+screen -ls                列出当前所有的会话
+screen -r <session>       回到<session>对应的会话
+screen -d <session>       远程脱离<session>会话，回到还没进入screen的状态
+screen -d -r <session>    脱离当前会话，返回<session>会话
+screen -R <session>       恢复离线的<session>会话，若找不到对应会话，则创建新的<session>会话
+
+★快捷键
+C-a ?                     显示所有键绑定信息
+C-a d                     脱离当前会话，回到还没进入screen的状态
+C-a k                     关闭当前会话
+C-a C-a                   在两个最近使用的会话间切换
+
+★配置文件
+/etc/screenrc

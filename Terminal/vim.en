@@ -1,0 +1,84 @@
+★Change Mode
+a/A/i/I/o/O             From command mode to insert mode
+Esc                     From insert mode to command mode
+:                       From command mode to bottom-line command mode
+r/R                     Enter replace mode, r will only be replaced once; R will continue to replace until you press Esc
+
+★Text Entry Commands
+a                       Append text following current cursor position
+A                       Append text to the end of current line
+i                       Insert text before the current cursor position
+I                       Insert text at the beginning of the cursor line
+o                       Open up a new line following the current line and add text there
+O                       Open up a new line in front of the current line and add text there
+
+★Cursor Movement Commands
+h or ←	                Move the cursor one character to the left
+j or ↓	                Move the cursor down one line
+k or ↑	                Move the cursor up one line
+l or →	                Move the cursor one character to the right
+nG or :n                Cursor goes to the specified (n) line
+gg                      Move the cursor to the first line (same as 1G)
+G                       Move the cursor to the last line
+n<space>                Move the cursor (n) characters to the right
+n<Enter>                Move the cursor down (n) lines
+$ or End                Move cursor to the end of current line
+^ or 0                  Move cursor to the beginning of current line
+w                       Forward one word
+b                       Backward one word
++                       Move the cursor to the next line of the non-space character
+-                       Move the cursor to the previous line of the non-space character
+Ctrl + f or Page Down   One page forward
+Ctrl + b or Page Up     One page backward
+Ctrl + d                Down half screenful
+Ctrl + u                Up half screenful
+
+★Exit Commands
+:wq                     Write file to disk and quit the editor
+:q!                     Quit (no warning)
+:q                      Quit (a warning is printed if a modified file has not been saved)
+ZZ                      Save workspace and quit the editor (same as :wq)
+:w [filename]           Save text as
+:n1,n2 w [filename]     Write lines (n1) through (n2) into file named filename
+
+★Text Deletion Commands
+x or Del                Delete character
+X                       Delete character before the cursor
+nx                      Delete n characters backward
+nX                      Delete n characters forward
+dw                      Delete word from cursor on
+db                      Delete word backward
+dd                      Delete line
+d$                      Delete to end of line
+d^ or d0                Delete to beginning of line
+
+★Yank Commands
+yy                      Yank current line
+nyy                     Yank (n) lines
+y1G                     Yank all characters from the first line to the cursor
+yG                      Yank all characters from the cursor to the last line
+y0                      Yank all characters from the beginning of the line to the cursor
+y$                      Yank to end of current line from cursor
+yw                      Yank from cursor to end of current word
+
+★Paste Commands
+p                       Paste below cursor
+P                       Paste above cursor
+u                       Undo last change
+U                       Restore line
+J                       Join next line down to the end of the current line
+ctrl + r                Redo the last action
+.                       Repeat the last action
+
+★Search and Replace
+/pattern                Search forward for the pattern
+?pattern                Search backward for the pattern
+n                       Used after either of the 2 search commands above to continue to find next occurrence of the pattern
+N                       Used after either of the 2 search commands above to continue to find next occurrence of the pattern(reverse)
+:n1,n2s/word1/word2/g                       Replace the word1 with word2 between lines (n1) and (n2)
+:1,$s/word1/word2/g  or :%s/word1/word2/g   Replace all of word1 with word2
+:1,$s/word1/word2/gc or :%s/word1/word2/gc  Replace all of word1 with word2 and prompt the user to confirm before replacing
+
+★Environment Change
+:set nu                 Display line number
+:set nonu               Not display line number

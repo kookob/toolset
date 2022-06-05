@@ -1,0 +1,35 @@
+uname -a                          打印所有系统信息
+lsb_release -a                    Ubuntu: 查看当前系统的发行版信息
+cat /etc/redhat-release           查看CentOS版本
+cat /proc/version                 查看Linux内核版本
+cat /etc/issue
+cat /proc/loadavg
+cat /proc/cpuinfo                 查看CPU信息
+cat /proc/meminfo                 查看内存信息
+cat /proc/partitions              查看分区信息
+getconf LONG_BIT                  查看Linux系统是32位还是64位
+getconf WORD_BIT                  查看WORD(int类型)在当前系统中的位数
+fdisk -l
+
+mount | column -t
+route -n
+cut -d: -f1 /etc/passwd
+cut -d: -f1 /etc/group
+crontab -l
+
+ssh-keygen -t rsa
+
+dpkg -L <service_name>            显示软件安装目录
+service --status-all
+service <service_name> status     服务状态
+service <service_name> start      启动服务
+service <service_name> stop       停止服务
+service <service_name> restart    重启服务
+
+systemctl status <service_name>   服务状态
+systemctl start <service_name>    启动服务
+systemctl stop <service_name>     停止服务
+systemctl restart <service_name>  重启服务
+
+Ubuntu Packages Search
+https://packages.ubuntu.com/
