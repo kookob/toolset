@@ -170,7 +170,7 @@ To be continue...
 [Toolset](https://plugins.jetbrains.com/plugin/14384-toolset/versions)  
 
 ## Price
-`$5/year`
+`$10/year`
 
 ## Plugins
 * [MyBatis Log Plugin](https://plugins.jetbrains.com/plugin/13905-mybatis-log-plugin) 
